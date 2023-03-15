@@ -1,0 +1,16 @@
+[package]
+name = "tree-splicer-regex"
+description = "Simple grammar-based regular expression generator"
+version = "0.2.0"
+keywords = ["black-box", "fuzzer", "grammar-based", "regex"]
+edition = "2021"
+authors = ["Langston Barrett <langston.barrett@gmail.com>"]
+license = "MIT"
+readme = "../../README.md"
+homepage = "https://github.com/langston-barrett/tree-splicer"
+repository = "https://github.com/langston-barrett/tree-splicer"
+
+[dependencies]
+anyhow = "1"
+tree-splicer = { version = "0.2.0", path = "../tree-splicer", features = ["cli"] }
+tree-sitter-regex = { git = "https://github.com/tree-sitter/tree-sitter-regex" }

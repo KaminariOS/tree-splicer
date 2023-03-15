@@ -1,0 +1,16 @@
+[package]
+name = "tree-splicer-cmake"
+description = "Simple grammar-based CMake program generator"
+version = "0.2.0"
+keywords = ["black-box", "fuzzer", "grammar-based", "cmake"]
+edition = "2021"
+authors = ["Langston Barrett <langston.barrett@gmail.com>"]
+license = "MIT"
+readme = "../../README.md"
+homepage = "https://github.com/langston-barrett/tree-splicer"
+repository = "https://github.com/langston-barrett/tree-splicer"
+
+[dependencies]
+anyhow = "1"
+tree-splicer = { version = "0.2.0", path = "../tree-splicer", features = ["cli"] }
+tree-sitter-cmake = { git = "https://github.com/uyha/tree-sitter-cmake" }

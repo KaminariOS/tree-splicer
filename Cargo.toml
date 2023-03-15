@@ -1,8 +1,11 @@
 [workspace] 
 members = [
     "crates/tree-splicer",
+    "crates/tree-splicer-cmake",
     "crates/tree-splicer-javascript",
+    "crates/tree-splicer-regex",
     "crates/tree-splicer-rust",
+    "crates/tree-splicer-sql",
     "crates/tree-splicer-typescript",
 ]
 
